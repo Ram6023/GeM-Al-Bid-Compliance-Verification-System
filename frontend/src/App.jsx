@@ -7,6 +7,8 @@ import AnalyticsDashboard from './components/AnalyticsDashboard';
 import BidsList from './components/BidsList';
 import { RefreshCw, FileCheck } from 'lucide-react';
 
+// GeM AI Bid Compliance Verification Dashboard
+// Backend Endpoint: https://gem-al-bid-compliance-verification-system.onrender.com
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard'); // dashboard, upload, bids
   const [bids, setBids] = useState([]);
