@@ -41,7 +41,8 @@ export default function ComplianceMatrix({ bidData, results, onRefresh }) {
   });
 
   const handleExportPDF = () => {
-    window.open(`/api/bids/${bidData.id}/export-pdf`, '_blank');
+    const baseUrl = axios.defaults.baseURL || '';
+    window.open(`${baseUrl}/api/bids/${bidData.id}/export-pdf`, '_blank');
   };
 
   const handleOverrideSubmit = async (e) => {

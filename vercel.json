@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://gem-al-bid-compliance-verification-system.onrender.com/api/:match*"
+    }
+  ]
+}
